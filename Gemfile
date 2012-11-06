@@ -2,13 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 gem 'bootstrap-sass', '2.0.4'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'bcrypt-ruby', '3.0.1'
 gem 'pg'
 gem 'thin'
 gem 'haml'
+
+group :development do
+  gem 'annotate', '2.5.0'
+end
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
